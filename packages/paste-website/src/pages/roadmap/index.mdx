@@ -8,6 +8,10 @@ import {Anchor} from '@twilio-paste/anchor';
 import {Box} from '@twilio-paste/box';
 import {AnchoredHeading} from '../../components/Heading';
 import {Callout, CalloutText} from '../../components/callout';
+import {Card} from '@twilio-paste/card';
+import {Heading} from '@twilio-paste/heading';
+import {List} from '@twilio-paste/list';
+import {Grid, Column} from '@twilio-paste/grid';
 
 export const pageQuery = graphql`
   {
@@ -35,38 +39,56 @@ export const pageQuery = graphql`
 ## Release 2020.02.25
 
 Release date: February 25, 2020
-
-**Design releases**
-
-- Design more form field components (Select, Checkbox and Checkbox group, and Radio and Radio Group). 📝
-- Design a Form composition component. 📝
-- Design a Toast component. 🍞
-
-**Engineering releases**
-
-- Publish the Modal Primitive component
-- Publish a Grid layout component
-
-**Other**
-
-- Add an icon list to the [icon system guidelines](/icon-system) with more design guidelines. Right now, you can access our <Anchor href="https://twilio-labs.github.io/paste/?path=/story/overview-icons--list"> full icon list on Storybook</Anchor>.
+<Grid gutter="space70">
+  <Column>
+    <Card>
+      <Heading as="h3">Design Releases</Heading>
+      <OrderedList>
+        <ListItem>
+          Design more form field components (Select, Checkbox and Checkbox group, and Radio and Radio Group). 📝
+        </ListItem>
+        <ListItem>
+          Design a Form composition component. 📝
+        </ListItem>
+        <ListItem>
+          Design a Toast component. 🍞
+        </ListItem>
+        <ListItem>
+          Design an icon list 👩🏽‍🎤 for the [icon system guidelines](/icon-system) with more design guidelines. Presently, you can access our <Anchor href="https://twilio-labs.github.io/paste/?path=/story/overview-icons--list"> full icon list on Storybook</Anchor>.
+        </ListItem>
+      </OrderedList>
+    </Card>
+  </Column>
+  <Column offset={1}>
+    <Card>
+      <Heading as="h3">Engineering Releases</Heading>
+        <ListItem>
+          Publish the Modal Primitive component
+        </ListItem>
+        <ListItem>
+          Publish a Grid layout component
+        </ListItem>  
+    </Card>
+  </Column>
+</Grid>
 
 ---
 
 ## Release 2020.04.07
 
 Release date: April 7, 2020
-
-**Design releases**
-
+<Card>
+  <Heading as="h3">Design Releases</Heading>
 - Design Overlay components (Modal, Alert dialog, and Overlay). 🕴
 - Design a Tab component.
 - Design a Table component.
 - Define our icon-naming schema.
+</Card>
 
-**Engineering releases**
-
-TBD
+<Card>
+  <Heading as="h3">Engineering Releases</Heading>
+- TBD
+</Card>
 
 **Other**
 

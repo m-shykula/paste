@@ -29,6 +29,7 @@
     "@twilio-paste/box": "^2.1.4",
     "@twilio-paste/button": "^1.1.9",
     "@twilio-paste/flex": "^0.2.1",
+    "@twilio-paste/grid": "^0.1.4",
     "@twilio-paste/heading": "^1.0.10",
     "@twilio-paste/icons": "^1.4.2",
     "@twilio-paste/list": "^0.1.4",
